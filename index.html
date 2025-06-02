@@ -1,0 +1,201 @@
+<html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Visual: Tônicas e o Efeito do D</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #18181b; /* Zinc 900 - Tom preto/escuro */
+            color: #d4d4d8; /* Zinc 300 - Texto principal claro */
+        }
+        .font-black {
+            font-weight: 900;
+        }
+        .highlight-terracotta { color: #e07a5f; } /* Terracota */
+        .bg-terracotta { background-color: #e07a5f; }
+        .border-terracotta { border-color: #e07a5f; }
+
+        .highlight-navy { color: #5DADE2; } /* Azul Marinho (mais claro para contraste) */
+        .bg-navy { background-color: #34495e; } /* Azul Marinho (para fundos) */
+        .border-navy { border-color: #5DADE2; }
+
+        .text-brown { color: #a1887f; } /* Marrom */
+        .bg-brown { background-color: #a1887f; }
+
+        .bg-card { background-color: #27272a; } /* Zinc 800 - Fundo dos cards */
+        .border-card { border-color: #3f3f46; } /* Zinc 700 - Borda dos cards */
+
+        .t-emphasis {
+            font-weight: 700;
+            color: #e07a5f; /* Terracota */
+        }
+        .section-title {
+            font-size: 2.25rem; /* Equivalente a text-4xl */
+            line-height: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem; /* mb-12 */
+        }
+        .card {
+            background-color: #27272a; /* bg-card */
+            border-radius: 0.5rem; /* rounded-lg */
+            padding: 1.5rem; /* p-6 */
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        .rule-number {
+            font-size: 3rem; /* text-5xl */
+            font-weight: 900; /* font-black */
+            margin-right: 1rem; /* mr-4 */
+        }
+        .rule-title {
+            font-size: 1.25rem; /* text-xl */
+            font-weight: 700; /* font-bold */
+        }
+        .arrow-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 900; /* font-black */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-6xl">
+
+        <header class="text-center my-12 md:my-16">
+            <h1 class="text-4xl md:text-5xl font-black highlight-navy mb-4">Guia Visual de Tônicas e o "Efeito do D"</h1>
+            <p class="text-lg md:text-xl text-brown max-w-3xl mx-auto">
+                Uma abordagem de Rricardo Voz para identificar palavras tônicas e compreender a influência do "Efeito do D" na interpretação de texto e oratória, baseada na "Aula Tônicas" do curso Falar Bem Conecta 5.0.
+            </p>
+        </header>
+
+        <main>
+            <section id="regras-tonicas" class="mb-16 md:mb-24">
+                <h2 class="section-title highlight-terracotta">Como Identificar as "Tônicas"?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+                    <div class="card">
+                        <div class="flex items-start mb-3">
+                            <span class="rule-number highlight-navy">1</span>
+                            <div>
+                                <h3 class="rule-title">Acento Gráfico</h3>
+                                <p class="text-sm text-gray-400 mt-1">A maioria das palavras com acento (agudo, circunflexo, grave) são tônicas.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm"><strong>Exceções notáveis:</strong> Monossílabos átonos como <span class="t-emphasis">"é"</span>, <span class="t-emphasis">"já"</span>, <span class="t-emphasis">"tão"</span>, <span class="t-emphasis">"são"</span>, <span class="t-emphasis">"som"</span> (em certas funções).</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start mb-3">
+                            <span class="rule-number highlight-navy">2</span>
+                            <div>
+                                <h3 class="rule-title">Primeira Palavra da Frase</h3>
+                                <p class="text-sm text-gray-400 mt-1">Geralmente, a palavra que inicia uma sentença carrega tonicidade natural.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm">Ex: "<span class="t-emphasis">A voz</span> é mais que simplesmente um som."</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start mb-3">
+                            <span class="rule-number highlight-navy">3</span>
+                            <div>
+                                <h3 class="rule-title">Antes de Pontuação Forte</h3>
+                                <p class="text-sm text-gray-400 mt-1">A palavra que precede ponto final, exclamação, interrogação ou reticências.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm">Ex: "encontra nas entrelinhas o seu <span class="t-emphasis">espaço</span>."</p>
+                    </div>
+
+                    <div class="card md:col-span-2 lg:col-span-1">
+                        <div class="flex items-start mb-3">
+                            <span class="rule-number highlight-navy">4</span>
+                            <div>
+                                <h3 class="rule-title">Responde Pergunta Implícita</h3>
+                                <p class="text-sm text-gray-400 mt-1">Palavras que respondem a "o quê?", "de quê?", "como?", "quando?", "onde?".</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm">Ex: "A <span class="t-emphasis">voz</span>" (A... o quê? <span class="t-emphasis">Voz</span>).</p>
+                    </div>
+
+                    <div class="card md:col-span-2 lg:col-span-2">
+                        <div class="flex items-start mb-3">
+                            <span class="rule-number highlight-navy">5</span>
+                            <div>
+                                <h3 class="rule-title">Palavras Autodefinidoras ou Conclusivas</h3>
+                                <p class="text-sm text-gray-400 mt-1">Palavras que, por si sós, definem uma ideia completa ou finalizam um pensamento com impacto.</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 text-sm">Exemplos: "<span class="t-emphasis">Transcendeu!</span>", "<span class="t-emphasis">Muito bom!</span>" (onde <span class="t-emphasis">"bom"</span> é a tônica principal).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="efeito-d" class="mb-16 md:mb-24 py-12 bg-card rounded-lg shadow-xl">
+                <h2 class="section-title highlight-terracotta">O "Efeito do D" e Sua Influência</h2>
+                <p class="text-center text-brown max-w-3xl mx-auto mb-10 text-md">
+                    Este fenômeno descreve como palavras de ligação (da, de, do, das, dos), tônicas por si, fundem-se a outras, criando uma <span class="font-semibold text-gray-300">unidade tônica coesa</span>. Isso direciona o foco e une significados.
+                </p>
+
+                <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6 p-4">
+                    <div class="text-center p-4 border-2 border-dashed border-navy rounded-lg bg-zinc-800">
+                        <p class="text-sm text-gray-400">Palavra Tônica</p>
+                        <p class="text-2xl font-bold highlight-navy">serviço</p>
+                    </div>
+
+                    <div class="arrow-container text-brown text-3xl md:text-4xl">+</div>
+
+                    <div class="text-center p-4 border-2 border-solid border-terracotta rounded-lg shadow-md bg-zinc-800">
+                         <p class="text-sm text-gray-400">"Efeito do D"</p>
+                        <p class="text-2xl font-bold highlight-terracotta">da</p>
+                    </div>
+                    
+                    <div class="arrow-container text-brown text-3xl md:text-4xl">+</div>
+
+                    <div class="text-center p-4 border-2 border-dashed border-navy rounded-lg bg-zinc-800">
+                        <p class="text-sm text-gray-400">Outra Palavra</p>
+                        <p class="text-2xl font-bold highlight-navy">verdade</p>
+                    </div>
+                    
+                    <div class="arrow-container text-brown text-3xl md:text-4xl mt-4 md:mt-0">→</div>
+
+                    <div class="text-center p-6 rounded-xl shadow-2xl bg-zinc-900 border-2 border-gray-600 w-full md:w-auto mt-4 md:mt-0">
+                        <p class="text-sm font-semibold text-brown">Unidade Tônica Resultante</p>
+                        <p class="text-3xl font-black text-gray-200">serviço-<span class="highlight-terracotta">da</span>-verdade</p>
+                    </div>
+                </div>
+
+                 <div class="text-center mt-12 px-4">
+                    <p class="text-md text-brown mb-4">Outros exemplos ilustrativos:</p>
+                    <div class="flex flex-wrap justify-center gap-3 md:gap-4">
+                        <span class="bg-zinc-900 p-3 rounded-md text-gray-300 font-semibold shadow">vestida-<span class="highlight-terracotta">de</span>-história</span>
+                        <span class="bg-zinc-900 p-3 rounded-md text-gray-300 font-semibold shadow">alma-<span class="highlight-terracotta">do</span>-tempo</span>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-brown max-w-3xl mx-auto mt-10">
+                    A compreensão do "Efeito do D" é crucial para uma leitura expressiva e para a análise rítmica da fala, revelando como palavras de ligação reconfiguram a proeminência.
+                </p>
+            </section>
+
+        
+        </main>
+
+        <footer class="text-center mt-16 md:mt-24 py-8 border-t border-zinc-700">
+            <p class="text-sm text-brown">&copy; 2024 Guia Visual de Tônicas FBC Ricardo Voz - por Vitor Maria | Vinew Digital .</p>
+        </footer>
+    </div>
+</body>
+</html>
